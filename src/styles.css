@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+    background: #0ecde9; /* For older browsers that may not support gradients */
+    background: -webkit-radial-gradient(center, ellipse cover, #0ecde9 0%, #025e83 100%);
+    background: radial-gradient(#0ecde9, #025e83);
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  #navbar {
+    background-color: #333;
+    width: 100%;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .hover-cursor {
+    cursor: pointer
+  }
+
+.item-check-left{
+  margin-right: 3%
+}
+
+.item-check-right{
+  margin-left: 3%
+}
+body{
+    background-color: transparent;
+}

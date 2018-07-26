@@ -1,0 +1,17 @@
+<div class="jumbotron" style="padding: 45px 0px;">
+  <h4 class="text-center">
+    Completed Tasks
+  </h4>
+</div>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of tasksAry">
+       <span class="hover-cursor item-check-left" [class.text-success]="item.completed" (click)="alterCheck(item.key, item.completed)">
+         <i class="fa fa-lg" [ngClass]="item.completed?'fa-check-circle-o':'fa-circle-thin'"></i>
+       </span>
+       {{item.name}}
+       <span class="hover-cursor text-danger pull-right item-check-right" (click)="onDelete(item.key)"><i class="fa fa-trash-o fa-lg"></i></span>
+    </li>
+  </ul>
+
+  <div *ngIf="tasksAry.length == 0" style = "color:white;text-align: center;"> Empty</div>
