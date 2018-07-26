@@ -20,9 +20,7 @@ import { TodoService } from './todo.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AppRoutingModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
